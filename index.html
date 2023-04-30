@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <title>Blood Donor Form</title>
+  </head>
+  <body>
+    <form>
+      <h1>Blood Donor Form</h1>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age"><br>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br>
+
+      <label for="blood-group">Blood Group:</label>
+      <input type="text" id="blood-group" name="blood-group"><br>
+
+      <label for="contact-no">Contact No:</label>
+      <input type="text" id="contact-no" name="contact-no"><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+
+      <input type="button" value="Submit" onclick="saveData()"><br>
+    </form>
+
+    <!-- Include FileSaver.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
